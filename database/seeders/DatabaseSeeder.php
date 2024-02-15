@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\book;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,7 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            AutorTableSeeder::class
+            book::class
         ]);
     }
 }

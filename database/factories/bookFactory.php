@@ -17,9 +17,9 @@ class autorFactory extends Factory
     public function definition()
     {
         return [
-            'fristname' => fake()->fristName,
-            'lastname' => fake()->lastName,
-            'date_of_birth' => fake()->dateTime,
+            'genre' => fake()->word,
+            'date_of_publication' => fake()->dateTime(),
+            'num_page' => fake()->numberBetween(10, 500),
         ];
     }
 }
