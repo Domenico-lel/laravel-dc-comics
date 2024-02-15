@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use app\models\autor;
+use Database\Factories\autorFactory;
 
 class AutorTableSeeder extends Seeder
 {
@@ -15,6 +16,6 @@ class AutorTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        autor::factory()->count(30)->create();
     }
 }
