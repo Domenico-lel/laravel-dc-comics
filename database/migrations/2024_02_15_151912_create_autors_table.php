@@ -18,7 +18,7 @@ return new class extends Migration
 
             $table->string('fristname');
             $table->string('lastname');
-            $table->integer('year_of_publication');
+            $table->integer('date_of_birth');
 
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('autor');
+        Schema::dropIfExists('autors');
     }
 };
