@@ -1,8 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComicController;
 
-Route::get('/', function () {
+route::get('/', [ComicController::class, 'index'])
+    ->name('comic.index');
 
-    return view('pages.index');
-});
+// Route::get('/', function () {
+
+//     return view('pages.index');
+// });
