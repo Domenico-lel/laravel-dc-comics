@@ -6,7 +6,5 @@ use App\Http\Controllers\ComicController;
 route::get('/', [ComicController::class, 'index'])
     ->name('comic.index');
 
-// Route::get('/', function () {
-
-//     return view('pages.index');
-// });
+route::get('/comics/{id}', [ComicController::class, 'show'])
+    ->name('comic.show');
