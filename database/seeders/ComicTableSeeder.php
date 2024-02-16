@@ -4,11 +4,10 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use app\models\autor;
-use App\Models\book;
-use Database\Factories\bookFactory;
 
-class BookTableSeeder extends Seeder
+use App\Models\Comic;
+
+class ComicTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,6 +16,6 @@ class BookTableSeeder extends Seeder
      */
     public function run()
     {
-        book::factory()->count(30)->create();
+        Comic::factory()->count(100)->create();
     }
 }
