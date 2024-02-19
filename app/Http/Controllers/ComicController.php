@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Comic;
 
+use App\Http\Requests\ComicFormRequests;
+
 class ComicController extends Controller
 {
     /**
