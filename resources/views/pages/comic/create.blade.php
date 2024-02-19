@@ -5,25 +5,23 @@
 @section('content')
     <h1>new comic</h1>
     <form 
-        action="#"
+        action="{{route('comic.store')}}"
         method="POST"
-
     >
+
         @csrf
-        @method('post')
+        @method('POST')
 
-        <label for="title">Title</label>
-        <input type="text" name="title">
+        <label for="title">title</label>
+        <input type="text" name="title" id="title">
         <br>
-
-        <label for="title">Title</label>
-        <input type="text" name="title">
+        <label for="description">description</label>
+        <input type="text" name="description" id="description">
         <br>
-
-        <label for="title">Title</label>
-        <input type="text" name="title">
+        <label for="price">price</label>
+        <input type="number" name="price" id="price">
         <br>
-
         <input type="submit" value="CREATE">
+
     </form>
 @endsection
